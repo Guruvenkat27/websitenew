@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>br architecs</title>
+    <style>
+        *{
+            margin: 0;
+
+padding: 0; 
+       }
+       section{
+        border: 2px solid transparent;
+        height: 99.5vh;
+       }
+
+       nav{
+        border: 2px solid transparent;
+        position: absolute;
+        width: 99.5%;
+        display: flex;
+        z-index: 1;
+        box-shadow: 0 0 9px gray;
+        align-items: center;
+        justify-content: space-between;
+        height: 8vh;
+        background-color: white;
+       }
+       .logo{
+        font-size: 23px;
+        position: relative;
+        left: 35px;
+        cursor: pointer;
+       }
+       
+       .more{
+        display: flex;
+     gap: 70px;
+    position: relative;
+    left: -60px;
+        
+       }
+       li{
+        list-style: none;
+      
+       }
+       li a{
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        border: 2px solid transparent;
+        transition: .5s linear;
+        padding: 2px 9px;
+       }
+       li a:hover{
+        border-radius: 20px ;
+        background-color: aqua;
+       }
+       
+       section{
+        overflow-y: auto;
+        
+       }
+       section::-webkit-scrollbar{
+        width: 0;
+       }
+
+       .box img{
+        border: 2px solid transparent;
+        position: sticky;
+        top: 60px;
+        width: 99%;
+        left: 6px;
+        height: 110vh;
+       }
+       .projects{
+        border: 2px solid transparent;
+        height: 90vh;
+        width: 98%;
+        position: relative;
+        left: 9px;
+        top: 1px;
+        margin-top: 5px;
+     
+       }
+       .projects p{
+        font-size: 30px;
+        position: relative;
+        left: 20px;
+        top: 27px;
+       }
+       .b1{
+        border: 2px solid transparent;
+        height: 35vh;
+        width: 97%;
+        position: relative;
+        left: 25px;
+        display: flex;
+        align-items: center;
+        top: 40px;
+        justify-content: space-between;
+        margin-top: 5px;
+        padding: 10px;
+       }
+       .imag{
+        border: 2px solid transparent;
+        width: 370px;
+        height: 230px;
+        position: relative;
+        
+        
+        
+
+        
+       }
+       .imag img{
+        width: 370px;
+        box-shadow: 0 0 15px gray;
+        height: 230px;
+
+       }
+       .para{
+        border: 2px solid transparent;
+        height: 18vh;
+        position: relative;
+        top: 36px;
+        
+       }
+       .para p{
+        font-size: 17px;
+        position: relative;
+        
+        
+       }
+       
+       .box2{
+        border: 2px solid transparent;
+    
+        height: 59vh;
+        position: relative;
+        top: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        }
+        .card{
+            border: 1px solid transparent;
+            width: 23%;
+            height: 56vh;
+          box-shadow: 0 0 10px gray;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        .pic{
+            border: 2px solid transparent;
+            height: 28vh;
+            
+        }
+        .info{
+            border: 2px solid transparent;
+            height: 20vh;
+            
+        }
+
+        .contact
+        {
+            border: 2px solid transparent;
+            height: 55vh;
+            position: relative;
+            top: 20px;
+            width: 98%;
+        }
+        .maps{
+            border: 2px solid transparent;
+            height: 110vh;
+            position: relative;
+            top: 40px;
+            width: 98%;left: 9px;
+        }
+footer{
+    border: 2px solid transparent;
+    height: 15vh;
+    position: relative;
+    top: 50px;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+footer p{
+    color: white;
+    font-size: 18px;
+}
+.info h2{
+    font-weight: 200;
+    position: relative;
+    left: 18px;
+    top: 4px;
+}
+.info .p1{
+    position: relative;
+    font-size: 16px;
+    
+    
+}
+.info .p2{
+    position: relative;
+    top: 35px;
+}
+button{
+    border: none;
+    border: 2px solid transparent;
+    width: 100%;
+    height: 7vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.pic img{
+    width: 380px;
+    height: 230px;
+    
+}
+.contact h1{
+    position: relative;
+    top: 10px;
+    left: 22px;
+    font-size: 29px;
+    font-weight: 200;
+}
+.contact form{
+ border: 2px solid transparent;
+ margin-top: 20px;
+ height: 50vh;
+}
+form p{
+    font-size: 17px ;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+form .b5{
+    border: 2px solid transparent;
+    margin-top: 20px;
+    display: grid;
+    gap: 5px;
+    height: 30vh;
+}
+.b5 input{
+    height: 6vh;
+    width: 100%;position: relative;
+    left: 20px;
+}
+input::placeholder{
+    position: relative;
+    left: 23px;
+    font-size: 16px;
+}
+form button{
+    width: 20%;
+    position: relative;
+    top: 15px;
+    background-color: black;
+    left: 20px;
+}
+form button a{
+    color: white;
+}
+button a{
+    color: black;
+    
+    font-size: 24px;
+    text-decoration: none;
+}
+.layer{
+    border: 2px solid transparent;height: 7vh;
+    width: 50%;
+position: relative;
+top: -66%;left: 25%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+    
+}
+span{
+    border: 2px solid transparent;
+    background-color: rgba(0, 0, 0, 0.573);
+    border-radius: 5px;
+    padding: 8px;
+}
+.layer p{
+    font-size: 50px;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><b>BR</b> Architects</div>
+        <div class="more">
+           <li> <a href="#b1">Projects</a></li><li><a href="#b2">About</a></li><li><a href="#b3">Contact</a></li>
+        </div>
+    </nav>
+    <section>
+      
+        <div class="box"><img  src="./modern-office-building-in-the-city-free-photo.webp" alt="Architecture" ></div>
+        <div class="layer">
+           <p> <span>BR</span> Architects</p>
+        </div>
+
+       
+        <div class="projects">
+            <p id="b1">Projects</p>
+            <div class="b1">
+                <div class="imag"><div class="p"></div><img src="./house5.jpg" alt=""></div>
+                <div class="imag"><img src="./house2 (1).jpg" alt=""></div>
+                <div class="imag"><img src="./house3 (1).jpg" alt=""></div>
+                <div class="imag"><img src="./house4.jpg" alt=""></div>
+            </div>
+            <div class="b1">
+                <div class="imag"><img src="./house2.jpg" alt=""></div>
+                <div class="imag"><img src="./house4 (1).jpg" alt=""></div>
+                <div class="imag"><img src="./house5 (1).jpg" alt=""></div>
+                <div class="imag"><img src="./house3.jpg" alt=""></div>
+            </div>
+        </div>
+        <div class="projects">
+            <p class="a1" id="b2">About</p>
+          <div class="para">
+            <p >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et <br>dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+   <div class="box2">
+ <div class="card">
+    <div class="pic"><img src="./team2.jpg" alt=""></div>
+    <div class="info">
+        <h2>John Doe
+        </h2>
+        <p class="p1">CEO & Founder</p>
+        <p class="p2">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+    
+    </div>
+    <button><a href="#"> contact</a></button>
+ </div>
+ <div class="card">    <div class="pic"><img src="./team1.jpg" alt=""></div>
+ <div class="info">
+     <h2>John Doe
+     </h2>
+     <p class="p1">CEO & Founder</p>
+     <p class="p2">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+ 
+ </div>
+ <button><a href="#"> contact</a></button></div>
+ <div class="card">    <div class="pic"><img src="./team3.jpg" alt=""></div>
+ <div class="info">
+     <h2>John Doe
+     </h2>
+     <p class="p1">CEO & Founder</p>
+     <p class="p2">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+ 
+ </div>
+ <button><a href="#"> contact</a></button></div>
+ <div class="card">    <div class="pic"><img src="./team4.jpg" alt=""></div>
+ <div class="info">
+     <h2>John Doe
+     </h2>
+     <p class="p1">CEO & Founder</p>
+     <p class="p2">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+ 
+ </div>
+ <button><a href="#"> contact</a></button></div>
+   </div>
+          </div>
+        </div>
+        <div class="contact">
+            <h1 id="b3">Contact</h1>
+           
+<form action=""> <p>Lets get in touch and talk about your next project.</p>
+   <div class="b5">
+    <input type="text" placeholder="Name">
+    <input type="email" placeholder="Email">
+    <input type="text" placeholder="Subject">
+    <input type="text" placeholder="Comment">
+   </div>
+    <button><a href="#"> SEND MESSAGE</a></button></form>
+        </div>
+        <div class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58881.28193861471!2d75.79951424863279!3d22.725263200000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fc4d236b19a3%3A0x4178f5eb94f21838!2sBR%20Architects!5e0!3m2!1sen!2sin!4v1709192415726!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <footer>
+<p>Powered by <u>Guru venkat</u></p>
+        </footer>
+    </section>
+    
+</body>
+</html>
